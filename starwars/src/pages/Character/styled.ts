@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-export const StyledCharacters = styled.div`
+export const StyledCharacter = styled.div`
   padding: 12px;
 `;

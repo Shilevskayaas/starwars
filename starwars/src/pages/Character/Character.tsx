@@ -1,10 +1,10 @@
-import { StyledCharacters } from './styled';
-import Header from '../Header/Header';
+import { NavLink } from 'react-router-dom'
+import { StyledCharacter } from './styled';
 
-function Characters() {
+export default function Character() {
+
   return (
-    <StyledCharacters>
-      <Header/>
+    <StyledCharacter>
       <div>
         <div>language: en</div>
         <h2>60 Peoples for you to choose your favorite</h2>
@@ -173,11 +173,11 @@ function Characters() {
               </div>
             </div>
           </div>
-          <button type='button'>Фиксированная нопка</button>
+          <NavLink to="/error">
+            <button type='button'>Фиксированная кнопка</button>
+          </NavLink>
         </div>
       </div>
-    </StyledCharacters>
+    </StyledCharacter>
   )
 }
-
-export default Characters

@@ -1,6 +1,6 @@
+import { NavLink } from 'react-router-dom'
 import planet from '../../img/planet.png';
 import { StyledError } from './styled';
-import Main from '../Main/Main';
 
 
 function Error() {
@@ -14,9 +14,11 @@ function Error() {
           </div>
           <div></div>
         </div>
-        <button type='button'>
-          <a href={<Main/>} target="_blank">Return</a>
-        </button>
+        <NavLink to="/">
+          <button type='button'>
+            <a href="/main" target="_blank">Return</a>
+          </button>
+        </NavLink>
       </div>
     </StyledError>
   )

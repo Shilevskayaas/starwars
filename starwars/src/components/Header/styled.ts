@@ -26,6 +26,12 @@ export const StyledHeader = styled.div`
 
     li a {
       color: #ffffff;
+
+      &.active,
+      &:hover {
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 4px;
+      }
     }
   }
 `;

@@ -1,4 +1,4 @@
-import close from '../../img/close.png';
+import close from '../../img/closeIcon.svg';
 import hero from '../../img/hero.png';
 import { StyledModal } from './styled';
 
