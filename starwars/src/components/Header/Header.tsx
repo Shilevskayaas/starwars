@@ -35,32 +35,3 @@ function Header() {
 }
 
 export default Header
-
-
-// import './App.css'
-// //import Header from './components/Header/Header.tsx'
-// import Main from './components/Main/Main.tsx'
-// import Character from './components/Character/Character.tsx';
-
-// function App() {
-// const currentPage = window.location.pathname.slice(1) || 'main';
-//   return (
-//     <>
-//       <div className='page'>
-//         <ul>
-//           <li>
-//             <a href="/main" target="_blank">Main</a>
-//           </li>
-//           <li>
-//             <a href="/character" target="_blank">Character</a>
-//           </li>
-//         </ul>
-//         <Main/>
-//         {currentPage === 'main' && <Main />}
-//         {currentPage === 'character' && <Character />}
-//       </div>
-//     </>
-//   )
-// }
-
-// export default App

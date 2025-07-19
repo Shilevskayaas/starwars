@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import close from '../../img/closeIcon.svg';
 import hero from '../../img/hero.png';
 import { StyledModal } from './styled';
 
 function Modal() {
+  const [setIsModalOpen] = useState(false);
+  
   return (
     <StyledModal>
       <div>
-        <img src={close} alt="Close"/>
+        <button onClick={() => setIsModalOpen}><img src={close} alt="Close"/></button>
         <div>
           <img src={hero} alt="Hero"/>
           <div>

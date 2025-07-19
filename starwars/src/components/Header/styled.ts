@@ -6,6 +6,7 @@ export const StyledHeader = styled.div`
   height: 93px;
   z-index: 999;
   padding: 0 157px;
+  background: #1F2A63;
   box-shadow: 0px 4px 4px 0px #FFFFFF40;
   color: #ffffff;
 

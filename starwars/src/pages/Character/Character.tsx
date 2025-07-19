@@ -1,10 +1,16 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
 import { StyledCharacter } from './styled';
+import Header from '../../components/Header/Header';
+import Modal from '../../components/Modal/Modal';
 
 export default function Character() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <StyledCharacter>
+    <div className='page'>
+      <Header />
+      <StyledCharacter>
       <div>
         <div>language: en</div>
         <h2>60 Peoples for you to choose your favorite</h2>
@@ -19,7 +25,7 @@ export default function Character() {
             </select>
           </div>
           <div>
-            <div>
+            <div onClick={() => setIsModalOpen(true)}>
               <h3>Chewbacca</h3>
               <div>
                 <div>
@@ -172,12 +178,19 @@ export default function Character() {
                 <div>19BBY</div>
               </div>
             </div>
+
+            {isModalOpen && (
+              <div className="modal">
+                <Modal />
+              </div>
+            )}
           </div>
           <NavLink to="/error">
             <button type='button'>Фиксированная кнопка</button>
           </NavLink>
         </div>
       </div>
-    </StyledCharacter>
+      </StyledCharacter>
+    </div>
   )
 }

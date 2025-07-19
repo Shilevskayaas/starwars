@@ -7,6 +7,7 @@ export const StyledMain = styled.div`
   padding: 0;
   min-height: calc(100% - 93px);
   max-height: calc(100% - 93px);
+  background: linear-gradient(180deg, #1F2A63 0%, #17002F 100%);
 
   & > div {
     position: relative;

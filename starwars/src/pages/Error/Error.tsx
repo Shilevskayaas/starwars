@@ -3,25 +3,25 @@ import planet from '../../img/planet.png';
 import { StyledError } from './styled';
 
 
-function Error() {
+export default function Error() {
   return (
-    <StyledError>
-      <div>
+    <div className='page'>
+      <StyledError>
         <div>
-          <div>language: en</div>
           <div>
-            <img src={planet} alt="Planet"/>
+            <div className='number'>4</div>
+            <div className='planet'>
+              <img src={planet} alt="Planet"/>
+            </div>
+            <div className='number'>4</div>
           </div>
-          <div></div>
+          <NavLink to="/">
+            <button type='button'>
+              <a href="/main" target="_blank">Return</a>
+            </button>
+          </NavLink>
         </div>
-        <NavLink to="/">
-          <button type='button'>
-            <a href="/main" target="_blank">Return</a>
-          </button>
-        </NavLink>
-      </div>
-    </StyledError>
+      </StyledError>
+    </div>
   )
 }
-
-export default Error
