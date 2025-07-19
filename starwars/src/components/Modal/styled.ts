@@ -5,9 +5,108 @@ export const StyledModal = styled.div`
   top: 50%;
   left: 50%;
   z-index: 999;
-  transition: all 1s;
+  transform: translate(-50%, -50%);
+  height: 36vh;
+  border-radius: 16px;
+
+  button {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    background: transparent;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+    img {
+      height: 32px;
+      width: 32px;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+  }
+
+  .modal_container {
+    display: flex;
+    align-items: center;
 
     & > div {
-      min-height: 371px;
+      height: -webkit-fill-available;
+      padding: 12px;
+
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1F2A63;
+      }
+
+      &:last-child {
+        background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%);
+      }
     }
+
+    .tags {
+      display: flex;
+      align-self: flex-end;
+      gap: 16px;
+    }
+
+    .tags > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 60px;
+      margin-top: 8px;
+      padding: 2px 8px;
+      border-radius: 11px;
+      background: #73D677;
+
+      &:last-child {
+        background: #07D6F2;
+      }
+    }
+
+    h2 {
+      font-family: Karla;
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0%;
+      color: #fdfdfd;
+    }
+
+    .card_abilities {
+      width: fit-content;
+      margin-bottom: 76px;
+      padding: 12px;
+      border-radius: 8px;
+      background: #fdfdfd;
+      box-shadow: 4px 4px 4px 0px #2121211A;
+    }
+
+    .card_counters {
+      display: flex;
+      gap: 24px;
+
+      & > div {
+        padding: 12px;
+        border-radius: 8px;
+        background: #fdfdfd;
+        box-shadow: 4px 4px 24px 0px #01112633;
+      }
+    }
+  }
 `;

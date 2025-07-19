@@ -8,18 +8,18 @@ function Modal() {
   
   return (
     <StyledModal>
-      <div>
-        <button onClick={() => setIsModalOpen}><img src={close} alt="Close"/></button>
+      <button onClick={() => setIsModalOpen}><img src={close} alt="Close"/></button>
+      <div className='modal_container'>
         <div>
           <img src={hero} alt="Hero"/>
-          <div>
+          <div className='tags'>
             <div>hermaphrodite</div>
             <div>600BBY</div>
           </div>
         </div>
         <div>
           <h2>Jabba Desilijic Tiure</h2>
-          <div>
+          <div className='card_abilities'>
             <div>
               <span>hair color: brown: brown</span>
             </div>
@@ -30,7 +30,7 @@ function Modal() {
               <span>hair color: brown</span>
             </div>
           </div>
-          <div>
+          <div className='card_counters'>
             <div>
               <div>228</div>
               <span>height</span>

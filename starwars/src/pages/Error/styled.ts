@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const StyledError = styled.div`
+height: 100%;
   padding: 96px 82px;
   background: #17002F;
 
@@ -8,11 +9,12 @@ export const StyledError = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 0;
+    height: 100%;
 
     & > div {
       display: flex;
       justify-content: space-between;
+      height: -webkit-fill-available;
       margin-bottom: 70px;
       width: 100%;
       position: relative;
@@ -43,6 +45,10 @@ export const StyledError = styled.div`
     padding: 20px 78px;
     background: #73D677;
     box-shadow: 0px -9px 0px 0px #0000002E inset;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     a {
       font-family: Karla;

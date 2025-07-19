@@ -71,6 +71,25 @@ button:focus-visible {
   height: 100vh;
 }
 
+.page > div:first-child:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page.blurred > div:first-child:before {
+  opacity: 0.5;
+  pointer-events: auto; /* Блокирует взаимодействие с контентом */
+}
+
 .disabled {
   display: none;
 }

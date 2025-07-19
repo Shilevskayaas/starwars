@@ -45,6 +45,11 @@ export const StyledMain = styled.div`
       padding: 8px 44px;
       font-size: 24px;
       background: #FFC107;
+      transition: all 0.1s;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       a {
         color: black;
