@@ -1,15 +1,14 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
-import { StyledCharacter } from './styled';
 import Header from '../../components/Header/Header';
 import Modal from '../../components/Modal/Modal';
 import exchange from '../../img/exchange.svg';
+import { StyledCharacter } from './styled';
 
 
 export default function Character() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Функция для закрытия модалки
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -191,14 +190,12 @@ export default function Character() {
           <NavLink
             to="/error"
             className='fix_button'>
-              <button type='button'>
-                <img src={exchange} alt="exchange" />
-              </button>
+              <img src={exchange} alt="exchange" />
           </NavLink>
         </div>
       </StyledCharacter>
       {isModalOpen && (
-        <Modal onClose={closeModal} /> // Передаем функцию закрытия
+        <Modal onClose={closeModal} />
       )}
     </div>
   )

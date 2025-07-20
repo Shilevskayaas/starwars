@@ -15,11 +15,7 @@ export default function Error() {
             </div>
             <div className='number'>4</div>
           </div>
-          <NavLink to="/">
-            <button type='button'>
-              <a href="/main" target="_blank">Return</a>
-            </button>
-          </NavLink>
+          <NavLink to="/" className='return_button'>Return</NavLink>
         </div>
       </StyledError>
     </div>

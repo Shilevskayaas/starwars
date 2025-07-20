@@ -9,7 +9,7 @@ export const StyledModal = styled.div`
   height: 36vh;
   border-radius: 16px;
 
-  button {
+  & > button {
     position: absolute;
     top: -55px;
     right: 0;
@@ -22,19 +22,6 @@ export const StyledModal = styled.div`
     img {
       height: 32px;
       width: 32px;
-    }
-
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
     }
   }
 
@@ -84,9 +71,8 @@ export const StyledModal = styled.div`
 
     h2 {
       margin: 16px 0;
-      font-family: Karla;
-      font-weight: 700;
       font-size: 36px;
+      font-weight: 700;
       color: #fdfdfd;
     }
 
@@ -105,9 +91,9 @@ export const StyledModal = styled.div`
       gap: 24px;
 
       & > div {
+        background: #fdfdfd;
         padding: 12px;
         border-radius: 8px;
-        background: #fdfdfd;
         box-shadow: 4px 4px 24px 0px #01112633;
       }
     }

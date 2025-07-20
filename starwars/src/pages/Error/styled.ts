@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledError = styled.div`
-height: 100%;
+  height: 100%;
   padding: 96px 82px;
   background: #17002F;
 
@@ -12,28 +12,27 @@ height: 100%;
     height: 100%;
 
     & > div {
+      position: relative;
       display: flex;
       justify-content: space-between;
       height: -webkit-fill-available;
-      margin-bottom: 70px;
       width: 100%;
-      position: relative;
+      margin-bottom: 70px;
     }
   }
 
   .number {
     flex: 0 0 auto;
-    color: #898096;
-    font-family: Karla;
-    font-weight: 700;
     font-size: 700px;
+    font-weight: 700;
+    color: #898096;
   }
 
   .planet {
     position: absolute;
-    z-index: 2;
     top: 50%;
     left: 50%;
+    z-index: 2;
     transform: translate(-50%, -50%);
 
     img {
@@ -41,23 +40,18 @@ height: 100%;
     }
   }
 
-  button {
+  .return_button {
     padding: 20px 78px;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    color: #212121;
     background: #73D677;
+    border-radius: 11px;
     box-shadow: 0px -9px 0px 0px #0000002E inset;
 
     &:hover {
       opacity: 0.8;
-    }
-
-    a {
-      font-family: Karla;
-      font-weight: 700;
-      font-size: 23px;
-      letter-spacing: 0%;
-      text-align: center;
-      vertical-align: middle;
-      color: #212121;
     }
   }
 `;

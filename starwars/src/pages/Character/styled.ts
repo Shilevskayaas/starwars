@@ -21,8 +21,6 @@ export const StyledCharacter = styled.div`
 
   h2 {
     margin-bottom: 48px;
-    font-family: Karla;
-    font-weight: 400;
     font-size: 35px;
     letter-spacing: 3px;
     text-align: center;
@@ -49,10 +47,8 @@ export const StyledCharacter = styled.div`
 
       h3 {
         margin-bottom: 12px;
-        font-family: Karla;
-        font-weight: 700;
         font-size: 18px;
-        letter-spacing: 0%;
+        font-weight: 700;
       }
 
       .props,
@@ -68,14 +64,10 @@ export const StyledCharacter = styled.div`
         width: 36px;
         height: 36px;
         margin-bottom: 8px;
+        font-size: 15px;
+        text-align: center;
         border: 3px solid #212121;
         border-radius: 18px;
-        font-family: Karla;
-        font-weight: 400;
-        font-size: 15px;
-        letter-spacing: 0%;
-        text-align: center;
-        vertical-align: middle;
       }
 
       .tags > div {
@@ -85,8 +77,8 @@ export const StyledCharacter = styled.div`
         min-width: 60px;
         margin-top: 8px;
         padding: 2px 8px;
-        border-radius: 11px;
         background: #73D677;
+        border-radius: 11px;
 
         &:last-child {
           background: #07D6F2;
@@ -101,8 +93,8 @@ export const StyledCharacter = styled.div`
 
   .select select {
     padding: 4px;
-    border-radius: 4px;
     background: #F2F2F2;
+    border-radius: 4px;
     box-shadow: 2px 2px 2px 0px #2121211A;
   }
 
@@ -110,19 +102,16 @@ export const StyledCharacter = styled.div`
     position: fixed;
     bottom: 24px;
     right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    background: #F28F16;
+    border-radius: 45px;
 
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 90px;
-      width: 90px;
-      background: #F28F16;
-      border-radius: 45px;
-
-      &:hover {
-        opacity: 0.8;
-      }
+    &:hover {
+      opacity: 0.8;
     }
   }
 `;

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../img/logo.png';
 import { StyledHeader } from './styled';
 
-function Header() {
+export default function Header() {
   return (
     <StyledHeader>
       <div>
@@ -33,5 +33,3 @@ function Header() {
     </StyledHeader>
   )
 }
-
-export default Header
