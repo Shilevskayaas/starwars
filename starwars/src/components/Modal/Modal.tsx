@@ -1,14 +1,16 @@
-import { useState } from 'react';
 import close from '../../img/closeIcon.svg';
 import hero from '../../img/hero.png';
 import { StyledModal } from './styled';
 
-function Modal() {
-  const [setIsModalOpen] = useState(false);
+type ModalProps = {
+  onClose: () => void;
+};
+
+export default function Modal({ onClose }: ModalProps) {
   
   return (
     <StyledModal>
-      <button onClick={() => setIsModalOpen}><img src={close} alt="Close"/></button>
+      <button onClick={onClose}><img src={close} alt="Close"/></button>
       <div className='modal_container'>
         <div>
           <img src={hero} alt="Hero"/>
@@ -45,5 +47,3 @@ function Modal() {
     </StyledModal>
   )
 }
-
-export default Modal

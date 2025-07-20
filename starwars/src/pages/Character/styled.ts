@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 export const StyledCharacter = styled.div`
-  padding: 36px 36px 12px 36px;
+  min-height: calc(100% - 93px);
+  max-height: calc(100% - 93px);
+  padding: 36px 158px 12px 158px;
   background: linear-gradient(180deg, #FFFFFF 30.32%, #F5F5F5 100%);
 
   & > div {
@@ -40,8 +42,10 @@ export const StyledCharacter = styled.div`
     .card {
       display: flex;
       flex-direction: column;
+      padding: 16px;
       background: #F0F0F0;
       border-radius: 8px;
+      cursor: pointer;
 
       h3 {
         margin-bottom: 12px;

@@ -55,6 +55,8 @@ export const StyledModal = styled.div`
       }
 
       &:last-child {
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%);
       }
     }
@@ -81,14 +83,15 @@ export const StyledModal = styled.div`
     }
 
     h2 {
+      margin: 16px 0;
       font-family: Karla;
       font-weight: 700;
       font-size: 36px;
-      letter-spacing: 0%;
       color: #fdfdfd;
     }
 
     .card_abilities {
+      flex: 1 1 auto;
       width: fit-content;
       margin-bottom: 76px;
       padding: 12px;

@@ -46,6 +46,7 @@ input::-ms-clear {
 }
 button {
    border: none;
+   outline: none !important; 
    cursor: pointer;
 }
 button::-moz-focus-inner {
@@ -108,10 +109,6 @@ h6 {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
 }
 
 .read-the-docs {

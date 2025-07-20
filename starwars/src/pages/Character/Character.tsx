@@ -5,8 +5,14 @@ import Header from '../../components/Header/Header';
 import Modal from '../../components/Modal/Modal';
 import exchange from '../../img/exchange.svg';
 
+
 export default function Character() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Функция для закрытия модалки
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={`page ${isModalOpen ? 'blurred' : ''}`}>
@@ -181,12 +187,6 @@ export default function Character() {
               </div>
 
             </div>
-            
-              {isModalOpen && (
-                <div className="modal">
-                  <Modal />
-                </div>
-              )}
           </div>
           <NavLink
             to="/error"
@@ -197,6 +197,9 @@ export default function Character() {
           </NavLink>
         </div>
       </StyledCharacter>
+      {isModalOpen && (
+        <Modal onClose={closeModal} /> // Передаем функцию закрытия
+      )}
     </div>
   )
 }
