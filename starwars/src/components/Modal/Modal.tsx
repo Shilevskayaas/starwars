@@ -11,17 +11,17 @@ export default function Modal({ onClose }: ModalProps) {
   return (
     <StyledModal>
       <button onClick={onClose}><img src={close} alt="Close"/></button>
-      <div className="modal_container">
+      <div className="modal-container">
         <div>
           <img src={hero} alt="Hero"/>
-          <div className="tags">
+          <div className="card-tags">
             <div>hermaphrodite</div>
             <div>600BBY</div>
           </div>
         </div>
         <div>
           <h2>Jabba Desilijic Tiure</h2>
-          <div className="card_abilities">
+          <div className="card-abilities">
             <div>
               <span>hair color: brown: brown</span>
             </div>
@@ -32,7 +32,7 @@ export default function Modal({ onClose }: ModalProps) {
               <span>hair color: brown</span>
             </div>
           </div>
-          <div className="card_counters">
+          <div className="card-counters">
             <div>
               <div>228</div>
               <span>height</span>

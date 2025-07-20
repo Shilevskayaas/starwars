@@ -21,7 +21,7 @@ export const StyledError = styled.div`
     }
   }
 
-  .number {
+  .error-number {
     flex: 0 0 auto;
     font-size: 700px;
     font-weight: 700;
@@ -40,7 +40,7 @@ export const StyledError = styled.div`
     }
   }
 
-  .return_button {
+  .button-return {
     padding: 20px 78px;
     font-size: 23px;
     font-weight: 700;

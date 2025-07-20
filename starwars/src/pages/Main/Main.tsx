@@ -6,7 +6,7 @@ import { StyledMain } from "./styled";
 
 export default function Main() {
   return (
-    <div className="page">
+    <div className="page-container">
       <Header />
       <StyledMain>
         <div>
@@ -15,14 +15,14 @@ export default function Main() {
             <p>You can find out all the information about your favorite characters</p>
             <Button 
               to="/character" 
-              className="main_button"
+              className="button-main"
               children="See more..."
             >
             </Button>
           </div>
           <div>
-            <img src={cloud} alt="cloud" className="cloud_big" />
-            <img src={cloud} alt="cloud" className="cloud_small" />
+            <img src={cloud} alt="cloud" className="cloud-big" />
+            <img src={cloud} alt="cloud" className="cloud-small" />
             <img src={yoda} alt="Yoda" className="yoda"/>
           </div>
         </div>

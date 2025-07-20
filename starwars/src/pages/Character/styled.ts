@@ -22,12 +22,13 @@ export const StyledCharacter = styled.div`
   h2 {
     margin-bottom: 48px;
     font-size: 35px;
+    font-weight: 700;
     letter-spacing: 3px;
     text-align: center;
     color: #000000;
   }
 
-  .cards_container {
+  .cards-container {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -51,13 +52,13 @@ export const StyledCharacter = styled.div`
         font-weight: 700;
       }
 
-      .props,
-      .tags {
+      .card-props,
+      .card-tags {
         display: flex;
         gap: 16px;
       }
 
-      .props > div > div:first-child {
+      .card-props > div > div:first-child {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,7 +71,7 @@ export const StyledCharacter = styled.div`
         border-radius: 18px;
       }
 
-      .tags > div {
+      .card-tags > div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,10 +84,6 @@ export const StyledCharacter = styled.div`
         &:last-child {
           background: #07D6F2;
         }
-
-        &.disabled {
-          display: none;
-        }
       }
     }
   }
@@ -98,7 +95,7 @@ export const StyledCharacter = styled.div`
     box-shadow: 2px 2px 2px 0px #2121211A;
   }
 
-  .fix_button {
+  .button-fix {
     position: fixed;
     bottom: 24px;
     right: 24px;

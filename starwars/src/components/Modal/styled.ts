@@ -25,7 +25,7 @@ export const StyledModal = styled.div`
     }
   }
 
-  .modal_container {
+  .modal-container {
     display: flex;
     align-items: center;
 
@@ -48,13 +48,13 @@ export const StyledModal = styled.div`
       }
     }
 
-    .tags {
+    .card-tags {
       display: flex;
       align-self: flex-end;
       gap: 16px;
     }
 
-    .tags > div {
+    .card-tags > div {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,7 +76,7 @@ export const StyledModal = styled.div`
       color: #fdfdfd;
     }
 
-    .card_abilities {
+    .card-abilities {
       flex: 1 1 auto;
       width: fit-content;
       margin-bottom: 76px;
@@ -86,7 +86,7 @@ export const StyledModal = styled.div`
       box-shadow: 4px 4px 4px 0px #2121211A;
     }
 
-    .card_counters {
+    .card-counters {
       display: flex;
       gap: 24px;
 

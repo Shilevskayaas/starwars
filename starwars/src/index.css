@@ -107,11 +107,11 @@ h6 {
   }
 }
 
-.page {
+.page-container {
   height: 100vh;
 }
 
-.page > div:first-child:before {
+.page-container > div:first-child:before {
   content: '';
   position: fixed;
   top: 0;
@@ -125,7 +125,11 @@ h6 {
   pointer-events: none;
 }
 
-.page.blurred > div:first-child:before {
+.page-container.blurred > div:first-child:before {
   opacity: 0.5;
   pointer-events: auto;
+}
+
+.disabled {
+  display: none !important;
 }

@@ -43,7 +43,7 @@ export const StyledMain = styled.div`
       font-size: 38px;
     }
 
-    .main_button {
+    .button-main {
       padding: 20px 58px;
       font-size: 24px;
       color: #000000;
@@ -51,7 +51,7 @@ export const StyledMain = styled.div`
     }
   }
 
-  .cloud_big {
+  .cloud-big {
     position: absolute;
     top: 16px;
     right: 130px;
@@ -59,7 +59,7 @@ export const StyledMain = styled.div`
     z-index: 1;
   }
 
-  .cloud_small {
+  .cloud-small {
     position: absolute;
     bottom: 37%;
     left: 36px;
