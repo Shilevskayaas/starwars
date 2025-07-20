@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './pages/Main/Main.tsx'
-import Character from './pages/Character/Character.tsx';
-import Error from './pages/Error/Error.tsx';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main/Main.tsx"
+import Character from "./pages/Character/Character.tsx";
+import Error from "./pages/Error/Error.tsx";
 
 export default function App() {
   return (

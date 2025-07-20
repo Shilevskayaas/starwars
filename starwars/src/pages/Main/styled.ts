@@ -43,21 +43,11 @@ export const StyledMain = styled.div`
       font-size: 38px;
     }
 
-    button {
-      width: fit-content;
+    .main_button {
       padding: 20px 58px;
       font-size: 24px;
+      color: #000000;
       background: #FFC107;
-      border-radius: 11px;
-      transition: opacity 0.1s;
-
-      &:hover {
-        opacity: 0.8;
-      }
-
-      a {
-        color: #000000;
-      }
     }
   }
 

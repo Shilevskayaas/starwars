@@ -44,14 +44,8 @@ export const StyledError = styled.div`
     padding: 20px 78px;
     font-size: 23px;
     font-weight: 700;
-    text-align: center;
     color: #212121;
     background: #73D677;
-    border-radius: 11px;
     box-shadow: 0px -9px 0px 0px #0000002E inset;
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
 `;

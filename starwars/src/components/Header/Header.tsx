@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom'
-import logo from '../../img/logo.png';
-import { StyledHeader } from './styled';
+import { NavLink } from "react-router-dom"
+import logo from "../../img/logo.png";
+import { StyledHeader } from "./styled";
 
 export default function Header() {
   return (
@@ -14,16 +14,16 @@ export default function Header() {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) => isActive ? 'active' : ''}
-                >
+                className={({ isActive }) => isActive ? "active" : ""}
+              >
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink
                 to="/character"
-                className={({ isActive }) => isActive ? 'active' : ''}
-                >
+                className={({ isActive }) => isActive ? "active" : ""}
+              >
                 Characters
               </NavLink>
             </li>

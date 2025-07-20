@@ -109,9 +109,5 @@ export const StyledCharacter = styled.div`
     width: 90px;
     background: #F28F16;
     border-radius: 45px;
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
 `;
